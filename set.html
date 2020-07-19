@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <title> Military Fit Timer</title>
+
+        <link rel='stylesheet' href='styles.css'/>
+        
+    </head>
+
+    <body>
+
+        <div class="settimerpage"> <!-- outer container -->
+
+            <!-- <div class='section menu'></div> -->
+
+            <div class="section workoutimagecontainer">
+                <div class="workoutdesc"><p id="workoutdesc">Shoulder Taps</p></div>
+                <div class="workoutimagebox">
+                    <img class="workoutimage" id="workoutimage" src="assets/images/shouldertaps.jpg" />
+                </div>
+
+            </div>
+
+            <div class="section controlpanel">
+                <div class="section workouttimer">
+                    <p class="timedisplay">0:54</p>
+                    <p class="getready">Get Ready</p>
+                </div>
+
+                <div class="section controlbuttons">
+                    <div class="progressbar">
+                        <div id="filler" class="filler"></div>
+                        <div class="setindicator"><h1 id="setindicator"> Set 1 of 3</h1></div>
+                    </div>
+                    
+                </div>
+            </div>
+  
+        </div>
+
+
+        <div class="daysummarypage"> <!-- outer container -->
+
+            <!-- <div class='section menu'></div> -->
+    
+            <div class='section workoutheader'>
+                <div><h1> Day One 👶</h1></div>
+            </div>
+
+            <div class="section summaryimagecontainer">
+                <img class="summaryimage" id="summaryimage" src="assets/summaryimages/day01.jpg" />
+            </div>
+    
+            <div class="section daysummarycontrolpanel">
+                <div onclick="startDay(0)" class="section daystartbutton">
+                        <h1> GO 💪 </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="successcompletionpage"> <!-- outer container -->
+
+            <!-- <div class='section menu'></div> -->
+    
+            <div class='section workoutheader'>
+                <div><h1> Day One 👶</h1></div>
+            </div>
+
+            <div class="section successmessage">
+                <img class="successimage" src="https://media.giphy.com/media/Mp4hQy51LjY6A/giphy.gif" />
+                <div class="section controlbuttons">
+                    <div class="progressbar">
+                        <div class="setindicator"><h1 id="setindicator"> You're Done</h1></div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+
+
+        <!-- All scripts used in this page -->
+        <script src="workouts.js"></script>
+        <script src="set.js"></script>
+
+    </body>
+
+</html>

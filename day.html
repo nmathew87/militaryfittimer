@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title> Military Fit Timer</title>
+
+    <link rel='stylesheet' href='styles.css'/>
+    
+</head>
+
+<body>
+    <div class="page1"> <!-- outer container -->
+
+        <!-- <div class='section menu'></div> -->
+
+        <div class='section workoutheader'>
+            <div><button onclick="startDay(0)"> Quit </button></div>
+            <div><h1> Day One 👶</h1></div>
+            <div class="daytitle"> Day 1 </div>
+
+        </div>
+
+        <div class="section darebeeimagecontainer">
+
+            <img class="summaryimage" id="summaryimage" src="assets/summaryimages/day01.jpg" />
+
+            
+        </div>
+
+        <div class="section controlpanel">
+            <div class="section workouttimer">
+                <p >You can do this. Click start to get started.</p>
+
+            </div>
+
+            <div class="section controlbuttons">
+                <div class="progressbar">
+                    <div id="filler" class="filler"></div>
+                    <div class="setindicator"><h1> START </h1></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- All scripts used in this page -->
+    <script src="workouts.js"></script>
+    <script src="set.js"></script>
+</body>
+
+</html>
